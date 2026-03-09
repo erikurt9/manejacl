@@ -2198,6 +2198,681 @@ export const PREGUNTAS = [
     correcta: 1,
     explicacion: "Los empalmes laterales son zonas de alto riesgo porque los vehículos pueden aparecer inesperadamente. Debe reducir la velocidad y estar atento, especialmente si la visibilidad es limitada.",
   },
+
+  {
+    id: 160,
+    categoria: "Conducta Vial",
+    icono: "🛣️",
+    dificultad: 2,
+    pregunta: "Al conducir por una vía rural con un empalme lateral a la izquierda, ¿qué debe hacer?",
+    opciones: [
+      "Aumentar la velocidad para pasar antes de que salga algún vehículo.",
+      "Conducir con cuidado y estar atento a vehículos que puedan salir por el empalme.",
+      "Circular por el centro de la calzada para ver mejor.",
+    ],
+    correcta: 1,
+    explicacion: "Los empalmes laterales son zonas de alto riesgo porque los vehículos pueden aparecer inesperadamente. Debe reducir la velocidad y estar atento.",
+  },
+
+  // ── NUEVAS PREGUNTAS EXTRAÍDAS Y ADAPTADAS (161 - 185) ──────────────────────
+
+  {
+    id: 161,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 2,
+    pregunta: "Frente a una situación normal, ¿cuál es la forma más segura de frenar?",
+    opciones: [
+      "Frenando fuerte y poniendo neutro de inmediato.",
+      "Frenando suavemente, presionando el embrague y tirando el freno de mano.",
+      "Frenando suavemente, luego un poco más fuerte y aflojando antes de detenerse."
+    ],
+    correcta: 2,
+    explicacion: "Para un frenado seguro, se debe aplicar presión creciente y luego disminuirla levemente justo antes de la detención total para evitar tirones y mantener el control.",
+  },
+  {
+    id: 162,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 3,
+    pregunta: "¿Cuáles son las 2 principales razones por las que no se debe desenganchar el motor al ir cuesta abajo?",
+    opciones: [
+      "Porque se gasta más combustible y se dañan los neumáticos.",
+      "Porque tendrá menor control del frenado/dirección y el vehículo agarrará velocidad.",
+      "Porque el motor se detendrá y se dañará la caja de cambios."
+    ],
+    correcta: 1,
+    explicacion: "Al circular en neutro o con el embrague presionado, se pierde el efecto del freno motor, lo que hace que los frenos convencionales se sobrecalienten y el conductor pierda capacidad de reacción.",
+  },
+  {
+    id: 163,
+    categoria: "Convivencia Vial",
+    icono: "👪",
+    dificultad: 1,
+    pregunta: "¿Para qué sirven los seguros de niños en las puertas traseras de los vehículos?",
+    opciones: [
+      "Para bloquear las ventanas traseras.",
+      "Para impedir que las puertas se abran desde el interior.",
+      "Para asegurar las hebillas de los cinturones."
+    ],
+    correcta: 1,
+    explicacion: "El seguro de niños anula la manilla interior, permitiendo la apertura únicamente desde el exterior para evitar que menores abran la puerta en movimiento.",
+  },
+  {
+    id: 164,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 3,
+    pregunta: "Si su distancia de reacción es de 10m y la de frenado es 8m a una velocidad X, ¿cuál será su distancia de detención si duplica la velocidad?",
+    opciones: [
+      "36 metros.",
+      "52 metros.",
+      "64 metros."
+    ],
+    correcta: 1,
+    explicacion: "Al duplicar la velocidad, la reacción se duplica (20m) y la distancia de frenado se cuadruplica (32m). 20 + 32 = 52 metros.",
+  },
+  {
+    id: 165,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 3,
+    pregunta: "¿Qué distancia de detención aproximada tiene un tren que circula a 100 km/h?",
+    opciones: [
+      "Aproximadamente 200 metros.",
+      "Entre 800 y 1000 metros.",
+      "Más de 2000 metros."
+    ],
+    correcta: 1,
+    explicacion: "Debido a su gran masa e inercia, un tren requiere una distancia mucho mayor que un automóvil; a 100 km/h esta distancia bordea el kilómetro.",
+  },
+  {
+    id: 166,
+    categoria: "Mecánica Básica",
+    icono: "🔧",
+    dificultad: 2,
+    pregunta: "Usted está descendiendo una pendiente muy larga. ¿Qué debería hacer para controlar la velocidad?",
+    opciones: [
+      "Seleccionar una marcha baja para usar el freno motor.",
+      "Poner el vehículo en neutro.",
+      "Presionar el pedal de embrague constantemente."
+    ],
+    correcta: 0,
+    explicacion: "En pendientes prolongadas se debe utilizar el freno motor bajando una marcha, evitando que los frenos de servicio se sobrecalienten y fallen.",
+  },
+  {
+    id: 167,
+    categoria: "Normas de Tránsito",
+    icono: "⚖️",
+    dificultad: 3,
+    pregunta: "Según la 'Ley No Chat', ¿qué acción está prohibida incluso con el vehículo detenido en un semáforo rojo?",
+    opciones: [
+      "Mirar un mapa en el tablero del auto.",
+      "Manipular un dispositivo digital con la mano.",
+      "Escuchar música por altavoces."
+    ],
+    correcta: 1,
+    explicacion: "La Ley 21.377 prohíbe la manipulación de dispositivos móviles o digitales mientras se conduce, lo que incluye los tiempos de espera en señales de tránsito.",
+  },
+  {
+    id: 168,
+    categoria: "Convivencia Vial",
+    icono: "👪",
+    dificultad: 2,
+    pregunta: "¿Cuál es la distancia lateral mínima que debe dejar al adelantar a un ciclista?",
+    opciones: [
+      "0.5 metros.",
+      "1.0 metro.",
+      "1.5 metros."
+    ],
+    correcta: 2,
+    explicacion: "La Ley de Convivencia Vial establece un mínimo de 1.5 metros de separación lateral para resguardar la seguridad del ciclo.",
+  },
+  {
+    id: 169,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 3,
+    pregunta: "¿Qué es el efecto 'túnel' y cómo se produce?",
+    opciones: [
+      "Una falla visual al entrar a un túnel oscuro.",
+      "La reducción del campo visual lateral al aumentar la velocidad.",
+      "La ceguera temporal por cambios bruscos de luz."
+    ],
+    correcta: 1,
+    explicacion: "A mayor velocidad, el cerebro descarta la información lateral para enfocarse en el centro, reduciendo el campo visual drásticamente.",
+  },
+  {
+    id: 170,
+    categoria: "Mecánica Básica",
+    icono: "🔧",
+    dificultad: 2,
+    pregunta: "Si el pedal de freno se siente 'elástico' o 'esponjoso', ¿qué indica probablemente?",
+    opciones: [
+      "Falta de alineación en las ruedas.",
+      "Aire en el sistema de frenos.",
+      "Desgaste normal de las pastillas."
+    ],
+    correcta: 1,
+    explicacion: "El tacto esponjoso suele ser síntoma de burbujas de aire en el circuito hidráulico, lo que reduce la eficiencia del frenado.",
+  },
+  {
+    id: 171,
+    categoria: "Alcohol y Drogas",
+    icono: "🍺",
+    dificultad: 3,
+    pregunta: "Bajo la Ley Emilia, ¿cuál es la sanción por causar la muerte conduciendo en estado de ebriedad y huir?",
+    opciones: [
+      "Multa de 5 UTM.",
+      "Cárcel efectiva de al menos un año.",
+      "Suspensión de licencia por 3 meses."
+    ],
+    correcta: 1,
+    explicacion: "La Ley Emilia establece cárcel efectiva de al menos 1 año para quienes causen accidentes graves ebrios y abandonen el lugar o se nieguen al alcotest.",
+  },
+  {
+    id: 172,
+    categoria: "Normas de Tránsito",
+    icono: "⚖️",
+    dificultad: 2,
+    pregunta: "¿Hasta qué edad es obligatorio que los niños viajen en el asiento trasero?",
+    opciones: [
+      "Hasta los 8 años.",
+      "Hasta cumplir los 12 años.",
+      "Hasta que midan 1.50 metros."
+    ],
+    correcta: 1,
+    explicacion: "La ley prohíbe que niños menores de 12 años viajen en el asiento del acompañante delantero, salvo excepciones de vehículos sin asiento trasero.",
+  },
+  {
+    id: 173,
+    categoria: "Señales de Tránsito",
+    icono: "🚦",
+    dificultad: 2,
+    pregunta: "Si enfrenta un semáforo apagado o parpadeante en un cruce, ¿quién tiene prioridad?",
+    opciones: [
+      "El vehículo que circule más rápido.",
+      "El vehículo que se acerque por la derecha del otro.",
+      "El vehículo que va por la calle más ancha."
+    ],
+    correcta: 1,
+    explicacion: "Ante un semáforo defectuoso, rige la norma del Derecho Preferente de Paso: el vehículo que se acerca por la izquierda debe ceder al de la derecha.",
+  },
+  {
+    id: 174,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 2,
+    pregunta: "¿Cómo debe actuar ante el 'reventón' de un neumático delantero?",
+    opciones: [
+      "Frenar a fondo inmediatamente.",
+      "Sujetar el volante con fuerza y frenar con mucha suavidad.",
+      "Girar el volante hacia el lado contrario del reventón rápidamente."
+    ],
+    correcta: 1,
+    explicacion: "Debe sujetar el volante con firmeza para mantener la trayectoria y soltar el acelerador, frenando solo cuando el vehículo esté controlado.",
+  },
+  {
+    id: 175,
+    categoria: "Velocidad",
+    icono: "🏎️",
+    dificultad: 1,
+    pregunta: "¿Cuál es el límite máximo de velocidad en zona urbana para vehículos particulares?",
+    opciones: [
+      "60 km/h.",
+      "50 km/h.",
+      "40 km/h."
+    ],
+    correcta: 1,
+    explicacion: "Desde 2018, la velocidad máxima en zonas urbanas de Chile es de 50 km/h para todo tipo de vehículos livianos.",
+  },
+  {
+    id: 176,
+    categoria: "Mecánica Básica",
+    icono: "🔧",
+    dificultad: 2,
+    pregunta: "¿Qué indica que los neumáticos tengan más desgaste en el centro que en los bordes?",
+    opciones: [
+      "Presión de aire demasiado alta.",
+      "Presión de aire demasiado baja.",
+      "Falta de rotación de neumáticos."
+    ],
+    correcta: 0,
+    explicacion: "El exceso de aire hace que el neumático se abulte por el centro, provocando un desgaste prematuro en esa zona de contacto.",
+  },
+  {
+    id: 177,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 3,
+    pregunta: "¿Qué distancia recorre un vehículo a 90 km/h durante un segundo de reacción?",
+    opciones: [
+      "Aproximadamente 15 metros.",
+      "Aproximadamente 25 metros.",
+      "Aproximadamente 45 metros."
+    ],
+    correcta: 1,
+    explicacion: "A 90 km/h el vehículo recorre unos 25 metros por segundo. Conocer esto es vital para mantener una distancia de seguridad adecuada.",
+  },
+  {
+    id: 178,
+    categoria: "Alcohol y Drogas",
+    icono: "🍺",
+    dificultad: 2,
+    pregunta: "¿Qué estado se considera si un conductor tiene 0.5 gramos de alcohol por mil en la sangre?",
+    opciones: [
+      "Bajo la influencia del alcohol.",
+      "Estado de ebriedad.",
+      "Condición normal."
+    ],
+    correcta: 0,
+    explicacion: "Entre 0.31 y 0.79 g/l se define legalmente como 'Bajo la influencia del alcohol'. Desde 0.8 g/l es 'Estado de ebriedad'.",
+  },
+  {
+    id: 179,
+    categoria: "Convivencia Vial",
+    icono: "👪",
+    dificultad: 1,
+    pregunta: "En una 'Zona 30', ¿cuál es el objetivo principal?",
+    opciones: [
+      "Permitir el estacionamiento libre.",
+      "Proteger a usuarios vulnerables limitando la velocidad a 30 km/h.",
+      "Indicar que la calle está en mal estado."
+    ],
+    correcta: 1,
+    explicacion: "Las Zonas 30 son áreas de calmado de tráfico diseñadas para reducir la gravedad de accidentes y favorecer a peatones y ciclistas.",
+  },
+  {
+    id: 180,
+    categoria: "Mecánica Básica",
+    icono: "🔧",
+    dificultad: 2,
+    pregunta: "¿Cuál es la profundidad mínima legal permitida de los surcos de un neumático?",
+    opciones: [
+      "1.0 mm.",
+      "1.6 mm.",
+      "3.0 mm."
+    ],
+    correcta: 1,
+    explicacion: "Aunque se recomienda cambiarlos con 3mm por seguridad, el mínimo legal antes de ser rechazado en revisión técnica es 1.6 mm.",
+  },
+  {
+    id: 181,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 2,
+    pregunta: "¿Cuándo es más peligroso conducir bajo la lluvia?",
+    opciones: [
+      "Cuando ya ha llovido por varias horas.",
+      "Justo cuando empieza a caer la lluvia.",
+      "Inmediatamente después de que deja de llover."
+    ],
+    correcta: 1,
+    explicacion: "Las primeras gotas se mezclan con el polvo y el aceite del pavimento, creando una película extremadamente resbaladiza antes de ser lavada.",
+  },
+  {
+    id: 182,
+    categoria: "Mecánica Básica",
+    icono: "🔧",
+    dificultad: 2,
+    pregunta: "¿Qué función cumple el líquido de frenos?",
+    opciones: [
+      "Lubricar las pastillas de freno.",
+      "Transmitir la fuerza ejercida sobre el pedal hacia las ruedas.",
+      "Enfriar los discos de freno tras un frenado largo."
+    ],
+    correcta: 1,
+    explicacion: "Es un líquido hidráulico que transmite la presión desde el pedal hasta los cilindros de freno en las ruedas para detener el vehículo.",
+  },
+  {
+    id: 183,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 3,
+    pregunta: "Si las ruedas traseras de su vehículo resbalan hacia la izquierda, ¿qué debe hacer?",
+    opciones: [
+      "Girar el volante hacia la derecha.",
+      "Girar el volante hacia la izquierda.",
+      "Frenar a fondo para detener el giro."
+    ],
+    correcta: 1,
+    explicacion: "Ante un sobreviraje (derrape trasero), debe girar el volante suavemente hacia el mismo lado que derrapan las ruedas traseras para recuperar el control.",
+  },
+  {
+    id: 184,
+    categoria: "Normas de Tránsito",
+    icono: "⚖️",
+    dificultad: 1,
+    pregunta: "¿Qué significa la línea longitudinal continua pintada al centro de la calzada?",
+    opciones: [
+      "Que no se puede adelantar.",
+      "Que se puede adelantar con precaución.",
+      "Que solo pueden circular vehículos pesados."
+    ],
+    correcta: 0,
+    explicacion: "La línea continua prohíbe el paso de vehículos a la otra pista para adelantar o realizar virajes en U por razones de seguridad.",
+  },
+  {
+    id: 185,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 2,
+    pregunta: "¿Cómo afecta el peso excesivo de carga a la conducción?",
+    opciones: [
+      "Mejora la estabilidad en curvas.",
+      "Aumenta la distancia de frenado y desgasta más los frenos.",
+      "No afecta si la carga está bien amarrada."
+    ],
+    correcta: 1,
+    explicacion: "Un vehículo sobrecargado requiere mucha más energía para detenerse, aumentando la distancia necesaria y el riesgo de fatiga en los frenos.",
+  },
+
+  {
+    id: 186,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 3,
+    pregunta: "¿Qué es la 'distancia de parada total' (o de detención)?",
+    opciones: [
+      "Es la distancia que recorre el auto desde que el conductor frena hasta que se detiene.",
+      "Es la suma de la distancia de reacción más la distancia de frenado.",
+      "Es la distancia que recorre el auto en un segundo de tiempo."
+    ],
+    correcta: 1,
+    explicacion: "Es el trayecto total: desde que ves el peligro (reacción) hasta que el auto queda en 0 km/h (frenado).",
+  },
+  {
+    id: 187,
+    categoria: "Convivencia Vial",
+    icono: "👪",
+    dificultad: 2,
+    pregunta: "En un cruce peatonal, ¿qué debe hacer si un peatón se baja de la acera?",
+    opciones: [
+      "Tocar la bocina para que se detenga.",
+      "Ceder siempre el paso, ya que el peatón tiene preferencia en el paso cebra.",
+      "Pasar rápido si el peatón aún está lejos del centro de la calle."
+    ],
+    correcta: 1,
+    explicacion: "El peatón tiene prioridad total en pasos de cebra. El conductor debe detenerse antes de la línea de detención marcada.",
+  },
+  {
+    id: 188,
+    categoria: "Mecánica Básica",
+    icono: "🔧",
+    dificultad: 2,
+    pregunta: "¿Para qué sirve el termómetro del panel de instrumentos?",
+    opciones: [
+      "Para medir la temperatura ambiental exterior.",
+      "Para indicar la temperatura del líquido refrigerante del motor.",
+      "Para saber si el aire acondicionado está enfriando bien."
+    ],
+    correcta: 1,
+    explicacion: "Indica la temperatura de trabajo del motor. Si sube a la zona roja, se debe detener el vehículo de inmediato para evitar fundir el motor.",
+  },
+  {
+    id: 189,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 3,
+    pregunta: "Usted se acerca a una curva cerrada a la izquierda. ¿Qué debería hacer?",
+    opciones: [
+      "Frenar mientras está dentro de la curva para mantener el control.",
+      "Reducir la velocidad antes de entrar a la curva y acelerar suavemente al salir.",
+      "Mantener la velocidad alta para que la inercia ayude al giro."
+    ],
+    correcta: 1,
+    explicacion: "La frenada siempre se hace en línea recta antes de girar. Frenar fuerte dentro de la curva puede provocar un derrape por la fuerza centrífuga.",
+  },
+  
+  {
+    id: 190,
+    categoria: "Normas de Tránsito",
+    icono: "⚖️",
+    dificultad: 2,
+    pregunta: "¿Cuál es el objetivo principal de las señales de tránsito de color amarillo (Advertencia)?",
+    opciones: [
+      "Indicar prohibiciones u órdenes que se deben cumplir.",
+      "Advertir al conductor de peligros existentes o riesgos en la vía.",
+      "Entregar información sobre servicios cercanos como gasolineras."
+    ],
+    correcta: 1,
+    explicacion: "Las señales amarillas son preventivas; nos avisan con tiempo sobre curvas, zonas de escuela o peligros para que reduzcamos la velocidad.",
+  },
+  {
+    id: 191,
+    categoria: "Alcohol y Drogas",
+    icono: "🍺",
+    dificultad: 3,
+    pregunta: "¿Cuál es el efecto de la fatiga o el cansancio en la visión?",
+    opciones: [
+      "Mejora la visión nocturna por el esfuerzo ocular.",
+      "Provoca visión borrosa y mayor sensibilidad al encandilamiento.",
+      "No afecta la visión, solo la fuerza de las manos."
+    ],
+    correcta: 1,
+    explicacion: "El cansancio ralentiza el procesamiento de imágenes y hace que nos sea más difícil recuperarnos del brillo de las luces de otros autos.",
+  },
+  {
+    id: 192,
+    categoria: "Convivencia Vial",
+    icono: "👪",
+    dificultad: 1,
+    pregunta: "Si un vehículo de emergencia (ambulancia o bomberos) viene detrás con sirenas, ¿qué debe hacer?",
+    opciones: [
+      "Acelerar para no estorbar el paso.",
+      "Desplazarse hacia la derecha y detenerse si es necesario para dejar libre el paso.",
+      "Mantener su posición y no moverse hasta que el semáforo cambie."
+    ],
+    correcta: 1,
+    explicacion: "Es obligación ceder el paso desplazándose lateralmente. Si es necesario, se puede subir levemente a la acera con precaución para abrir el camino.",
+  },
+  {
+    id: 193,
+    categoria: "Mecánica Básica",
+    icono: "🔧",
+    dificultad: 2,
+    pregunta: "¿Qué significa el dibujo de un pequeño surtidor de combustible en el tablero?",
+    opciones: [
+      "Que el estanque está lleno.",
+      "Que el vehículo ha entrado en la reserva y debe cargar combustible pronto.",
+      "Que el sistema de inyección está fallando."
+    ],
+    correcta: 1,
+    explicacion: "Es el indicador de nivel bajo. Conducir con la reserva puede succionar impurezas del fondo del estanque y dañar los inyectores.",
+  },
+  {
+    id: 194,
+    categoria: "Conducción segura",
+    icono: "🛡️",
+    dificultad: 3,
+    pregunta: "¿Qué es el 'punto ciego' de un vehículo?",
+    opciones: [
+      "Un área alrededor del vehículo que no puede ser vista a través de los espejos retrovisores.",
+      "El momento en que el sol nos da de frente y no vemos nada.",
+      "Una falla en las luces traseras que no iluminan el suelo."
+    ],
+    correcta: 0,
+    explicacion: "Son zonas ocultas por la carrocería. Para compensarlos, es necesario girar levemente la cabeza antes de cambiarse de pista.",
+  },
+  
+  {
+    id: 195,
+    categoria: "Normas de Tránsito",
+    icono: "⚖️",
+    dificultad: 2,
+    pregunta: "Usted llega a un cruce ferroviario que tiene las barreras levantadas pero no hay luces. ¿Qué hace?",
+    opciones: [
+      "Pasa rápidamente sin mirar.",
+      "Se detiene, mira a ambos lados y escucha antes de cruzar.",
+      "Toca la bocina y cruza con cuidado."
+    ],
+    correcta: 1,
+    explicacion: "Incluso con barreras arriba, siempre se debe verificar visual y auditivamente. Los sistemas automáticos pueden fallar.",
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 // ── UTILIDADES ──────────────────────────────────────────────────────────────
