@@ -59,12 +59,14 @@ function TopBar({ onMenuToggle, showMenu }) {
   return (
     <div className="md:hidden flex items-center justify-between px-4 py-3 border-b border-slate-800 flex-shrink-0">
       <div className="flex items-center gap-2">
-        <div className="w-7 h-7 rounded-lg bg-blue-500 flex items-center justify-center flex-shrink-0">
-          <svg width="14" height="14" fill="none" viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </div>
-        <span className="font-black text-white text-base">Maneja<span className="text-blue-400">CL</span></span>
+        <button onClick={() => useStore.getState().reiniciar()} className="flex items-center gap-2 bg-transparent border-0 p-0 hover:opacity-80 transition-opacity">
+          <div className="w-7 h-7 rounded-lg bg-blue-500 flex items-center justify-center flex-shrink-0">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <span className="font-black text-white text-base">Maneja<span className="text-blue-400">CL</span></span>
+        </button>
         <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${modo === "examen" ? "bg-blue-500/20 text-blue-400" : "bg-amber-500/20 text-amber-400"}`}>
           {modo === "examen" ? "Examen" : "Estudio"}
         </span>
@@ -94,12 +96,14 @@ function SidebarContent({ onClose }) {
     <div className="flex flex-col p-5 gap-4 h-full overflow-y-auto">
       {/* Logo — solo desktop */}
       <div className="hidden md:flex items-center gap-2 mb-1">
-        <div className="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center">
-          <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </div>
-        <span className="font-black text-white text-lg">Maneja<span className="text-blue-400">CL</span></span>
+        <button onClick={() => useStore.getState().reiniciar()} className="flex items-center gap-2 bg-transparent border-0 p-0 hover:opacity-80 transition-opacity">
+          <div className="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <span className="font-black text-white text-lg">Maneja<span className="text-blue-400">CL</span></span>
+        </button>
         <span className={`ml-auto text-xs font-bold px-2 py-0.5 rounded-full ${modo === "examen" ? "bg-blue-500/20 text-blue-400" : "bg-amber-500/20 text-amber-400"}`}>
           {modo === "examen" ? "Examen" : "Estudio"}
         </span>
@@ -437,24 +441,24 @@ function ModoEstudio() {
           )}
         </AnimatePresence>
 
-        <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
-          <div className="flex-1 flex flex-col min-w-0 border-b lg:border-b-0 lg:border-r border-slate-800/60 overflow-hidden">
+        <div className="flex-1 overflow-y-auto">
+          <div className="flex flex-col lg:flex-row min-h-full">
             {/* Preguntas */}
-            <div className="flex-1 overflow-y-auto">
-              <div className="px-4 md:px-10 flex flex-col pt-6 md:pt-8 max-w-4xl mx-auto w-full pb-4">
+            <div className="flex-1 flex flex-col border-b lg:border-b-0 lg:border-r border-slate-800/60">
+              <div className="flex-1 px-4 md:px-10 flex flex-col pt-6 md:pt-10 max-w-4xl mx-auto w-full pb-6">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={preguntaActual}
                     initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
                     transition={{ duration: 0.22 }}
                   >
-                    <span className="text-amber-400 text-sm md:text-base font-bold uppercase tracking-widest mb-3 md:mb-4 block">
+                    <span className="text-amber-400 text-sm md:text-base font-bold uppercase tracking-widest mb-4 md:mb-6 block">
                       Pregunta {preguntaActual + 1} de {preguntas.length}
                     </span>
-                    <p className="text-slate-400 text-xs md:text-sm mb-1.5">
+                    <p className="text-slate-400 text-xs md:text-sm mb-2">
                       {Math.round(((preguntaActual + 1) / preguntas.length) * 100)}% completado
                     </p>
-                    <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden mb-4 md:mb-6">
+                    <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden mb-6 md:mb-10">
                       <motion.div className="h-full bg-blue-400" animate={{ width: `${((preguntaActual + 1) / preguntas.length) * 100}%` }} transition={{ duration: 0.35, ease: "easeOut" }} initial={false} />
                     </div>
                     <ImagenPregunta src={pregunta.imagen} />
@@ -471,7 +475,7 @@ function ModoEstudio() {
                             key={i}
                             onClick={() => !yaRespondida && useStore.getState().responder(i)}
                             disabled={yaRespondida}
-                            className={`text-left px-4 md:px-8 py-3 md:py-4 rounded-2xl border-2 transition-all duration-200 text-base md:text-lg font-medium ${
+                            className={`text-left px-4 md:px-8 py-4 md:py-5 rounded-2xl border-2 transition-all duration-200 text-base md:text-lg font-medium ${
                               yaRespondida && estado === "neutro" ? estilos.deshabilitado : estilos[estado]
                             }`}
                             animate={
@@ -509,10 +513,9 @@ function ModoEstudio() {
                   </motion.div>
                 </AnimatePresence>
               </div>
-            </div>
 
               {/* Navegación */}
-              <div className="flex items-center justify-between px-4 md:px-10 py-3 md:py-4 border-t border-slate-800 flex-shrink-0">
+              <div className="flex items-center justify-between px-4 md:px-10 py-4 md:py-6 border-t border-slate-800 flex-shrink-0">
                 <button
                   onClick={() => useStore.setState({ preguntaActual: Math.max(0, preguntaActual - 1) })}
                   disabled={preguntaActual === 0}
@@ -532,7 +535,7 @@ function ModoEstudio() {
                   )}
                 </AnimatePresence>
               </div>
-          </div>
+            </div>
 
             {/* Panel derecho — solo desktop/tablet grande */}
             <div className="hidden lg:flex w-72 flex-shrink-0 flex-col gap-4 p-5 overflow-y-auto">
@@ -545,6 +548,7 @@ function ModoEstudio() {
                 respuestas={respuestas}
               />
             </div>
+          </div>
         </div>
       </div>
     </div>
