@@ -660,6 +660,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "🍺",
     dificultad: 1,
+    puntaje: 2,
     pregunta: "Una persona puede manejar un vehículo bajo la influencia del alcohol.",
     opciones: ["Nunca.", "Solo de día.", "Sin estar ebrio."],
     correcta: 0,
@@ -1231,6 +1232,7 @@ export const PREGUNTAS = [
     categoria: "Mecánica Básica",
     icono: "🔧",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Cuál afirmación sobre el cinturón de seguridad es verdadera?",
     opciones: [
       "Los airbags reemplazan ventajosamente al cinturón.",
@@ -1262,6 +1264,7 @@ export const PREGUNTAS = [
     categoria: "Velocidades",
     icono: "🏎️",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Cuál es la velocidad máxima en autopistas urbanas en Chile?",
     opciones: ["80 km/h", "100 km/h", "120 km/h"],
     correcta: 1,
@@ -1272,6 +1275,7 @@ export const PREGUNTAS = [
     categoria: "Velocidades",
     icono: "🏎️",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Cuál es la velocidad máxima en carreteras interurbanas para vehículos livianos?",
     opciones: ["90 km/h", "100 km/h", "120 km/h"],
     correcta: 2,
@@ -1282,6 +1286,7 @@ export const PREGUNTAS = [
     categoria: "Velocidades",
     icono: "🏎️",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Cuál es la velocidad máxima frente a un establecimiento educacional en horario de clases?",
     opciones: ["30 km/h", "40 km/h", "50 km/h"],
     correcta: 0,
@@ -1292,6 +1297,7 @@ export const PREGUNTAS = [
     categoria: "Velocidades",
     icono: "🏎️",
     dificultad: 3,
+    puntaje: 2,
     pregunta: "A 50 km/h con buenas condiciones, ¿cuánto tarda aproximadamente en detenerse su vehículo?",
     opciones: ["Unos 10 metros.", "Unos 30 metros.", "Unos 50 metros."],
     correcta: 1,
@@ -1302,6 +1308,7 @@ export const PREGUNTAS = [
     categoria: "Velocidades",
     icono: "🏎️",
     dificultad: 3,
+    puntaje: 2,
     pregunta: "A 70 km/h, ¿qué distancia recorre su vehículo desde que percibe un peligro hasta que comienza a frenar?",
     opciones: ["Unos 5 metros.", "Unos 20 metros.", "Unos 40 metros."],
     correcta: 1,
@@ -1315,6 +1322,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "🍺",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Cuánto mayor es el riesgo de accidente con una alcoholemia entre 0,3 y 0,5 g/l?",
     opciones: [
       "El doble que sin alcohol.",
@@ -1329,6 +1337,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "🍺",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "Si ha consumido alcohol, ¿cuál es el mejor consejo para volver a casa?",
     opciones: [
       "Tomar un café cargado y luego conducir.",
@@ -1343,6 +1352,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "🍺",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Cuáles son los efectos probables del consumo de alcohol en la conducción?",
     opciones: [
       "Mejora la coordinación y los reflejos.",
@@ -1357,6 +1367,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "💊",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "Está tomando remedios que pueden afectar su conducción. ¿Qué debe hacer?",
     opciones: [
       "Conducir solo distancias cortas.",
@@ -1371,6 +1382,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "💊",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Por qué debe consultar al médico si le han recetado un tratamiento?",
     opciones: [
       "Porque las drogas hacen más rápidas sus reacciones.",
@@ -1385,6 +1397,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "😴",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Cuáles son los primeros síntomas de cansancio al conducir?",
     opciones: [
       "Se comienza a sentir calor y agresividad.",
@@ -1399,6 +1412,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "😴",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "Si siente cansancio mientras conduce y no puede detenerse aún, ¿qué debe hacer?",
     opciones: [
       "Aumentar la velocidad para llegar más rápido.",
@@ -1413,6 +1427,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "😴",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Qué efecto tiene la calefacción del vehículo en el nivel de somnolencia?",
     opciones: [
       "Mantiene al conductor alerta y activo.",
@@ -1973,6 +1988,7 @@ export const PREGUNTAS = [
     categoria: "Conocimientos Legales",
     icono: "📋",
     dificultad: 1,
+    puntaje: 2,
     pregunta: "¿Es necesario usar cinturón de seguridad aunque el vehículo tenga airbag?",
     opciones: [
       "No, el airbag reemplaza al cinturón.",
@@ -2130,6 +2146,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "🍺",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Consumir alcohol con el estómago vacío qué efecto produce?",
     opciones: [
       "Reduce el efecto del alcohol.",
@@ -2361,6 +2378,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "🍺",
     dificultad: 3,
+    puntaje: 2,
     pregunta: "Bajo la Ley Emilia, ¿cuál es la sanción por causar la muerte conduciendo en estado de ebriedad y huir?",
     opciones: [
       "Multa de 5 UTM.",
@@ -2417,6 +2435,7 @@ export const PREGUNTAS = [
     categoria: "Velocidad",
     icono: "🏎️",
     dificultad: 1,
+    puntaje: 2,
     pregunta: "¿Cuál es el límite máximo de velocidad en zona urbana para vehículos particulares?",
     opciones: [
       "60 km/h.",
@@ -2459,6 +2478,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "🍺",
     dificultad: 2,
+    puntaje: 2,
     pregunta: "¿Qué estado se considera si un conductor tiene 0.5 gramos de alcohol por mil en la sangre?",
     opciones: [
       "Bajo la influencia del alcohol.",
@@ -2643,6 +2663,7 @@ export const PREGUNTAS = [
     categoria: "Alcohol y Drogas",
     icono: "🍺",
     dificultad: 3,
+    puntaje: 2,
     pregunta: "¿Cuál es el efecto de la fatiga o el cansancio en la visión?",
     opciones: [
       "Mejora la visión nocturna por el esfuerzo ocular.",
@@ -2708,7 +2729,329 @@ export const PREGUNTAS = [
     ],
     correcta: 1,
     explicacion: "Incluso con barreras arriba, siempre se debe verificar visual y auditivamente. Los sistemas automáticos pueden fallar.",
-  }
+  },
+
+  // ── PREGUNTAS CON IMAGEN ─────────────────────────────────────────────────────
+
+  {
+    id: 196,
+    categoria: "Señales",
+    icono: "🚦",
+    dificultad: 1,
+    imagen: "/imagenes/196_ceda_el_paso.png",
+    pregunta: "¿Qué significa esta señal de tránsito?",
+    opciones: [
+      "Pare",
+      "Ceda el paso",
+      "Prohibido adelantar",
+    ],
+    correcta: 1,
+    explicacion: "Obliga a ceder el paso a los vehículos que circulan por la vía a la que se aproxima.",
+  },
+
+  {
+    id: 197,
+    categoria: "Señales",
+    icono: "⚠️",
+    dificultad: 1,
+    imagen: "/imagenes/197_curva_derecha.png",
+    pregunta: "¿Qué indica esta señal de advertencia?",
+    opciones: [
+      "Curva a la derecha",
+      "Curva a la izquierda",
+      "Camino sinuoso",
+    ],
+    correcta: 1,
+    explicacion: "Indica la proximidad de una curva hacia la izquierda.",
+  },
+
+  {
+    id: 198,
+    categoria: "Demarcación",
+    icono: "🚶",
+    dificultad: 1,
+    imagen: "/imagenes/198_paso_peatonal.png",
+    pregunta: "¿Qué indica la demarcación de líneas transversales en la calzada?",
+    opciones: [
+      "Zona de detención",
+      "Cruce de ciclistas",
+      "Paso de peatones",
+    ],
+    correcta: 2,
+    explicacion: "Estas líneas delimitan el área donde los peatones tienen preferencia para cruzar.",
+  },
+
+  {
+    id: 199,
+    categoria: "Mecánica",
+    icono: "🔧",
+    dificultad: 2,
+    imagen: "/imagenes/199_testigo_bateria.png",
+    pregunta: "Si observa este testigo en su tablero, ¿qué sistema falla?",
+    opciones: [
+      "Falla en el motor",
+      "Falla en el alternador o carga",
+      "Baja presión de aceite",
+    ],
+    correcta: 1,
+    explicacion: "Indica un problema en el sistema de carga de la batería (alternador).",
+  },
+
+  {
+    id: 200,
+    categoria: "Señales",
+    icono: "🚦",
+    dificultad: 1,
+    imagen: "/imagenes/200_prohibido_camiones.png",
+    pregunta: "¿Qué significa esta señal de prohibición?",
+    opciones: [
+      "Camino para camiones",
+      "Solo carga y descarga",
+      "Prohibida la circulación de vehículos de carga",
+    ],
+    correcta: 2,
+    explicacion: "Prohíbe la entrada de camiones a una zona determinada.",
+  },
+
+  {
+    id: 201,
+    categoria: "Señales",
+    icono: "🚦",
+    dificultad: 2,
+    imagen: "/imagenes/201_mantener_derecha.png",
+    pregunta: "¿Qué deben hacer los conductores al ver esta señal?",
+    opciones: [
+      "Solo a la derecha",
+      "Solo a la izquierda",
+      "Mantenerse a la derecha",
+    ],
+    correcta: 2,
+    explicacion: "Obliga a los conductores a circular por el lado derecho de un refugio o obstáculo.",
+  },
+
+  {
+    id: 202,
+    categoria: "Mecánica",
+    icono: "🔧",
+    dificultad: 2,
+    imagen: "/imagenes/202_testigo_temperatura.png",
+    pregunta: "¿Qué indica este símbolo en el tablero?",
+    opciones: [
+      "Bajo nivel de agua",
+      "Sobrecalentamiento del motor",
+      "Falla en aire acondicionado",
+    ],
+    correcta: 1,
+    explicacion: "Indica que la temperatura del refrigerante del motor es excesivamente alta.",
+  },
+
+  {
+    id: 203,
+    categoria: "Señales",
+    icono: "⚠️",
+    dificultad: 3,
+    imagen: "/imagenes/203_pendiente_fuerte.png",
+    pregunta: "¿Qué significa esta señal de advertencia?",
+    opciones: [
+      "Subida peligrosa",
+      "Pendiente fuerte de bajada",
+      "Zona de derrumbes",
+    ],
+    correcta: 1,
+    explicacion: "Advierte sobre una bajada pronunciada donde se debe usar el freno de motor.",
+  },
+
+  {
+    id: 204,
+    categoria: "Demarcación",
+    icono: "🛣️",
+    dificultad: 1,
+    imagen: "/imagenes/204_flecha_direccion.png",
+    pregunta: "¿Qué indica la flecha blanca pintada en la calzada?",
+    opciones: [
+      "Sentido del tránsito",
+      "Solo virar a la izquierda",
+      "Dirección obligatoria",
+    ],
+    correcta: 2,
+    explicacion: "Indica la dirección que el conductor está obligado a seguir.",
+  },
+
+  {
+    id: 205,
+    categoria: "Señales",
+    icono: "🚦",
+    dificultad: 1,
+    imagen: "/imagenes/205_hospital.png",
+    pregunta: "¿Qué significa esta señal informativa?",
+    opciones: [
+      "Cruz roja",
+      "Farmacia",
+      "Hospital o Centro de salud",
+    ],
+    correcta: 2,
+    explicacion: "Indica la proximidad de un recinto asistencial de salud.",
+  },
+
+  {
+    id: 206,
+    categoria: "Semáforos",
+    icono: "🚦",
+    dificultad: 3,
+    imagen: "/imagenes/206_roja_flecha_verde.png",
+    pregunta: "¿Qué debe hacer ante un semáforo con luz roja y flecha verde?",
+    opciones: [
+      "Detenerse totalmente",
+      "Pasar solo si va derecho",
+      "Virar con precaución en sentido de la flecha",
+    ],
+    correcta: 2,
+    explicacion: "Permite el viraje en la dirección de la flecha pese a la luz roja, cediendo el paso a peatones.",
+  },
+
+  {
+    id: 207,
+    categoria: "Señales",
+    icono: "🚦",
+    dificultad: 1,
+    imagen: "/imagenes/207_proximidad_semaforo.png",
+    pregunta: "¿Qué indica esta señal de advertencia?",
+    opciones: [
+      "Zona de juegos",
+      "Proximidad de semáforo",
+      "Cruce peligroso",
+    ],
+    correcta: 1,
+    explicacion: "Advierte que se aproxima a una intersección regulada por semáforo.",
+  },
+
+  {
+    id: 208,
+    categoria: "Demarcación",
+    icono: "🛣️",
+    dificultad: 1,
+    imagen: "/imagenes/208_linea_discontinua.png",
+    pregunta: "¿Qué significa la línea discontinua al centro de la calzada?",
+    opciones: [
+      "Prohibido adelantar",
+      "Se puede adelantar con precaución",
+      "Solo para bicicletas",
+    ],
+    correcta: 1,
+    explicacion: "Permite el adelantamiento y el cambio de pista siempre que sea seguro.",
+  },
+
+  {
+    id: 209,
+    categoria: "Señales",
+    icono: "🚦",
+    dificultad: 1,
+    imagen: "/imagenes/209_prohibido_bicicletas.png",
+    pregunta: "¿Qué significa esta señal de prohibición?",
+    opciones: [
+      "Ciclovía cercana",
+      "Prohibida la circulación de bicicletas",
+      "Prioridad ciclistas",
+    ],
+    correcta: 1,
+    explicacion: "Indica que las bicicletas no pueden circular por esa vía.",
+  },
+
+  {
+    id: 210,
+    categoria: "Señales",
+    icono: "⚠️",
+    dificultad: 2,
+    imagen: "/imagenes/210_angostamiento.png",
+    pregunta: "¿Qué significa esta señal?",
+    opciones: [
+      "Camino ancho",
+      "Angostamiento de la vía",
+      "Puente levadizo",
+    ],
+    correcta: 1,
+    explicacion: "Advierte que la calzada se estrecha más adelante.",
+  },
+
+  {
+    id: 211,
+    categoria: "Mecánica",
+    icono: "💡",
+    dificultad: 1,
+    imagen: "/imagenes/211_luces_altas.png",
+    pregunta: "¿Qué indica este símbolo?",
+    opciones: [
+      "Luces bajas",
+      "Luces de posición",
+      "Luces altas encendidas",
+    ],
+    correcta: 2,
+    explicacion: "Es el testigo azul que indica que las luces altas están activadas.",
+  },
+
+  {
+    id: 212,
+    categoria: "Señales",
+    icono: "🚦",
+    dificultad: 1,
+    imagen: "/imagenes/212_pare.png",
+    pregunta: "¿Qué significa esta señal reglamentaria?",
+    opciones: [
+      "Ceda el paso",
+      "Pare",
+      "Prohibido seguir",
+    ],
+    correcta: 1,
+    explicacion: "Obliga a detener el vehículo por completo antes de la línea de detención.",
+  },
+
+  {
+    id: 213,
+    categoria: "Señales",
+    icono: "🚦",
+    dificultad: 1,
+    imagen: "/imagenes/213_aeropuerto.png",
+    pregunta: "¿Qué significa esta señal?",
+    opciones: [
+      "Zona de viento",
+      "Aviones volando bajo",
+      "Proximidad de aeropuerto",
+    ],
+    correcta: 2,
+    explicacion: "Informa sobre la cercanía de un aeropuerto o aeródromo.",
+  },
+
+  {
+    id: 214,
+    categoria: "Señales",
+    icono: "🚦",
+    dificultad: 2,
+    imagen: "/imagenes/214_no_entrar.png",
+    pregunta: "¿Qué significa esta señal de prohibición?",
+    opciones: [
+      "No entrar",
+      "Prohibido estacionar",
+      "Calle sin salida",
+    ],
+    correcta: 0,
+    explicacion: "Prohíbe la entrada de vehículos a la vía en el sentido que se enfrenta.",
+  },
+
+  {
+    id: 215,
+    categoria: "Mecánica",
+    icono: "⛽",
+    dificultad: 1,
+    imagen: "/imagenes/215_combustible.png",
+    pregunta: "¿Qué indica este símbolo en el tablero?",
+    opciones: [
+      "Falla motor",
+      "Bajo nivel de combustible",
+      "Fuga de aceite",
+    ],
+    correcta: 1,
+    explicacion: "Indica que el vehículo ha entrado en la reserva de combustible.",
+  },
 
   
 
@@ -2881,18 +3224,24 @@ export const PREGUNTAS = [
  * Genera un examen aleatorio de N preguntas
  * Opcionalmente filtrado por categoría
  */
-export function generarExamen(cantidad = 40, categoria = null) {
-  let pool = categoria
-    ? PREGUNTAS.filter((p) => p.categoria === categoria)
-    : [...PREGUNTAS];
+export function generarExamen(cantidad = 35) {
+  const shuffle = (arr) => {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  };
 
-  // Fisher-Yates shuffle
-  for (let i = pool.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [pool[i], pool[j]] = [pool[j], pool[i]];
-  }
+  const dobles = shuffle(PREGUNTAS.filter((p) => p.puntaje === 2));
+  const simples = shuffle(PREGUNTAS.filter((p) => p.puntaje !== 2));
 
-  return pool.slice(0, Math.min(cantidad, pool.length));
+  // Exactamente 3 de doble puntaje + 32 simples = 35 preguntas, máximo 38 pts
+  const selDobles = dobles.slice(0, Math.min(3, dobles.length));
+  const selSimples = simples.slice(0, cantidad - selDobles.length);
+
+  return shuffle([...selDobles, ...selSimples]);
 }
 
 /**

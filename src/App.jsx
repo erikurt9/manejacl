@@ -261,6 +261,23 @@ function InfoPanel({ pregunta, respuestaGuardada, yaRespondida, correctasHasta, 
   );
 }
 
+// ─── IMAGEN PREGUNTA ─────────────────────────────────────────────────────────
+function ImagenPregunta({ src }) {
+  if (!src) return null;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25 }}
+      className="mb-6 md:mb-10 rounded-2xl overflow-hidden border border-slate-700/60 bg-slate-800/40"
+    >
+      <img
+        src={src}
+        alt="Imagen de la pregunta"
+        className="w-full max-h-72 object-contain p-4"
+      />
+    </motion.div>
+  );
+}
+
 // ─── MODO EXAMEN ──────────────────────────────────────────────────────────────
 function ModoExamen() {
   const { preguntaActual, respuestas, tick, preguntas } = useStore();
@@ -299,7 +316,7 @@ function ModoExamen() {
         </AnimatePresence>
 
         <div className="flex-1 overflow-y-auto">
-          <div className="px-4 md:px-10 flex flex-col justify-start pt-8 md:pt-20 max-w-4xl mx-auto w-full pb-10">
+          <div className="px-4 md:px-10 flex flex-col justify-start pt-6 md:pt-10 max-w-4xl mx-auto w-full pb-6">
             <AnimatePresence mode="wait">
               <motion.div
                 key={preguntaActual}
@@ -315,7 +332,8 @@ function ModoExamen() {
                 <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden mb-6 md:mb-10">
                   <motion.div className="h-full bg-blue-400" initial={false} animate={{ width: `${((preguntaActual + 1) / preguntas.length) * 100}%` }} transition={{ duration: 0.35, ease: "easeOut" }} />
                 </div>
-                <h2 className="text-2xl md:text-4xl font-bold text-white leading-relaxed max-w-3xl mb-7 md:mb-12 tracking-tight">
+                <ImagenPregunta src={pregunta.imagen} />
+                <h2 className="text-2xl md:text-4xl font-bold text-white leading-relaxed max-w-3xl mb-5 md:mb-8 tracking-tight">
                   {pregunta.pregunta}
                 </h2>
 
@@ -423,7 +441,7 @@ function ModoEstudio() {
           <div className="flex flex-col lg:flex-row min-h-full">
             {/* Preguntas */}
             <div className="flex-1 flex flex-col border-b lg:border-b-0 lg:border-r border-slate-800/60">
-              <div className="flex-1 px-4 md:px-10 flex flex-col pt-8 md:pt-20 max-w-4xl mx-auto w-full">
+              <div className="flex-1 px-4 md:px-10 flex flex-col pt-6 md:pt-10 max-w-4xl mx-auto w-full pb-6">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={preguntaActual}
@@ -439,7 +457,8 @@ function ModoEstudio() {
                     <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden mb-6 md:mb-10">
                       <motion.div className="h-full bg-blue-400" animate={{ width: `${((preguntaActual + 1) / preguntas.length) * 100}%` }} transition={{ duration: 0.35, ease: "easeOut" }} initial={false} />
                     </div>
-                    <h2 className="text-2xl md:text-4xl font-bold text-white leading-relaxed max-w-3xl mb-7 md:mb-12 tracking-tight">
+                    <ImagenPregunta src={pregunta.imagen} />
+                    <h2 className="text-2xl md:text-4xl font-bold text-white leading-relaxed max-w-3xl mb-5 md:mb-8 tracking-tight">
                       {pregunta.pregunta}
                     </h2>
 
@@ -691,6 +710,7 @@ function Resultado() {
                       </span>
                     </div>
                     <p className="text-white font-black text-lg md:text-2xl leading-snug">{p.pregunta}</p>
+                    <ImagenPregunta src={p.imagen} />
                   </div>
 
                   <div className="flex flex-col gap-2 md:gap-3 px-4 md:px-8 pb-4 md:pb-6">
