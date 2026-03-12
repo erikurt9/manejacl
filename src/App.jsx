@@ -490,7 +490,7 @@ function ModoEstudio() {
                               </span>
                               {op}
                             </span>
-                          </motion.button>
+                          </button>
                         );
                       })}
                     </div>
