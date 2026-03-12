@@ -466,7 +466,7 @@ function ModoEstudio() {
                       {pregunta.opciones.map((op, i) => {
                         const estado = estadoOpcion(i);
                         return (
-                          <motion.button
+                          <button
                             whileTap={{ scale: 0.97 }}
                             key={i}
                             onClick={() => !yaRespondida && useStore.getState().responder(i)}
