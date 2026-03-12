@@ -346,13 +346,13 @@ function ModoExamen() {
                       onClick={() => !yaRespondida && useStore.getState().responder(i)}
                       disabled={yaRespondida}
                       whileTap={!yaRespondida ? { scale: 0.97 } : {}}
-                      whileHover={!yaRespondida ? { scale: 1.015 } : {}}
+                      
                       className={`text-left px-4 md:px-8 py-4 md:py-6 rounded-2xl border-2 transition-all duration-150 text-base md:text-xl font-medium ${
                         yaRespondida && i === respuestaGuardada
                           ? "border-blue-500 bg-blue-500/10 text-blue-200"
                           : yaRespondida
                           ? "border-slate-700/30 bg-slate-800/20 text-slate-500 cursor-default"
-                          : "border-slate-700/60 bg-slate-800/40 text-slate-200 hover:border-blue-400 hover:bg-slate-700/60 hover:shadow-lg hover:shadow-blue-500/10"
+                          : "border-slate-700/60 bg-slate-800/40 text-slate-200 "
                       }`}
                     >
                       <span className="flex items-center gap-3 md:gap-4">
