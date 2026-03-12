@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+@media (hover: none) {
+  button:hover {
+    opacity: 1 !important;
+    transform: none !important;
+    background-color: inherit !important;
+    border-color: inherit !important;
+    box-shadow: none !important;
+  }
+}
