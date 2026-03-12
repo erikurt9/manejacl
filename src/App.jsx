@@ -411,7 +411,7 @@ function ModoEstudio() {
   };
 
   const estilos = {
-    neutro: "border-slate-700/60 bg-slate-800/40 text-slate-200 hover:border-amber-400 hover:bg-slate-700/60 cursor-pointer",
+    neutro: "border-slate-700/60 bg-slate-800/40 text-slate-200 md:hover:border-amber-400 md:hover:bg-slate-700/60 cursor-pointer",
     correcta: "border-emerald-500 bg-emerald-500/10 text-emerald-300 cursor-default",
     incorrecta: "border-red-500 bg-red-500/10 text-red-300 cursor-default",
     deshabilitado: "border-slate-700/30 bg-slate-800/20 text-slate-500 cursor-default",
@@ -478,7 +478,7 @@ function ModoEstudio() {
                               estado === "correcta" ? { scale: [1, 1.015, 1] } :
                               estado === "incorrecta" ? { x: [0, -8, 8, -5, 5, 0] } : {}
                             }
-                            whileHover={!yaRespondida ? { scale: 1.015 } : {}}
+                            
                             transition={{ duration: 0.35 }}
                           >
                             <span className="flex items-center gap-3 md:gap-4">
