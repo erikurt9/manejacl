@@ -330,9 +330,7 @@ function ModoExamen() {
                 <span className="text-blue-400 text-sm md:text-base font-bold uppercase tracking-widest mb-4 md:mb-6 block">
                   Pregunta {preguntaActual + 1} de {preguntas.length}
                 </span>
-                <p className="text-slate-400 text-xs md:text-sm mb-2">
-                  {Math.round(((preguntaActual + 1) / preguntas.length) * 100)}% completado
-                </p>
+               
                 <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden mb-6 md:mb-10">
                   <motion.div className="h-full bg-blue-400" initial={false} animate={{ width: `${((preguntaActual + 1) / preguntas.length) * 100}%` }} transition={{ duration: 0.35, ease: "easeOut" }} />
                 </div>
@@ -455,9 +453,7 @@ function ModoEstudio() {
                     <span className="text-amber-400 text-sm md:text-base font-bold uppercase tracking-widest mb-4 md:mb-6 block">
                       Pregunta {preguntaActual + 1} de {preguntas.length}
                     </span>
-                    <p className="text-slate-400 text-xs md:text-sm mb-2">
-                      {Math.round(((preguntaActual + 1) / preguntas.length) * 100)}% completado
-                    </p>
+                    
                     <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden mb-6 md:mb-10">
                       <motion.div className="h-full bg-blue-400" animate={{ width: `${((preguntaActual + 1) / preguntas.length) * 100}%` }} transition={{ duration: 0.35, ease: "easeOut" }} initial={false} />
                     </div>
